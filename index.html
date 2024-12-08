@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPOINTMENTS Live</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>APPOINTMENTS Live</h1>
+        <form id="appointmentForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="text" id="petName" placeholder="Pet Name" required>
+            <input type="date" id="appointmentDate" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div class="search-sort">
+            <input type="text" id="searchInput" placeholder="Search appointments...">
+            <select id="sortSelect">
+                <option value="username">Sort by Username</option>
+                <option value="petName">Sort by Pet Name</option>
+                <option value="date">Sort by Date</option>
+            </select>
+        </div>
+        <ul id="appointmentList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
